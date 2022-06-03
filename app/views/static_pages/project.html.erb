@@ -1,2 +1,87 @@
-<h1>StaticPages#project</h1>
-<p>Find me in app/views/static_pages/project.html.erb</p>
+<% provide(:title, "THE PROJECT") %>
+
+<div class = "row">
+  <div class = "col">
+    <h1><%= yield(:title) %></h1>
+    <ul>
+      <li>
+        <p>Queer Sex Ed Community Curriculum was created out of the need for a sexual health curriculum that is: <b>accessible</b>, <b>accurate</b>, and </b>accountable</b>. </p></li>
+      <li>
+        <p>We believe that everyone has a right to access and take part in building a curriculum that centers on <b>consent</b>, <b>pleasure</b>, and <b>authenticity</b>.</p>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<div class = "row " style = "border: 1px solid white;">
+  
+  <div class = "col-md-6">
+  <%= image_tag("window.jpg", size: "412x309", alt: "A window sill with a monstera plant, assorted mugs, and zines. A sidewalk and bicycle can be seen outside.") %>
+  </div>
+
+  <div class = "col-md-6">
+    <div class = "row">
+      <h2>01.<br>EDUCATE</h2>
+    </div>
+    <div class = "row">
+      <p>We create educational <b>zines, posters, curriculum</b>, and <b>articles.</b></p>
+    </div>
+    <div class = "row">
+      <h3>EVERYTHING WE CREATE IS FREE TO DOWNLOAD.</h3>
+    </div>
+    <div class = "row">
+      <p><i>We plan to offer both virtual and in-person training soon.</i></p>
+    </div>
+    <div class = "row">
+      <%= link_to "VIEW OUR ZINE ARCHIVE", "#" %>
+    </div>
+  </div>
+</div>
+
+
+
+<div class = "row" style = "border: 1px solid white;">
+  <div class = "col-md-6">
+    <div class = "row">
+      <h2>02.<br>DISRUPT</h2>
+    </div>
+    <div class = "row">
+      <p>We disrupt the traditional hierarchy of knowledge by <b>validating</b> and <b>publishing</b> the perspectives of anyone within our community</p>
+    </div>
+    <div class = "row">
+      <h3>YOU CAN JOIN US IN CREATING THIS CURRICULUM</h3>
+    </div>
+    <div class = "row">
+      <%= link_to "VIEW OUR MISSION", '#' %>
+    </div>
+  </div>
+  <div class = "col-md-6">
+    <%= image_tag("bookshelf.jpg", alt: "A multilayered bookshelf with many different colored books.") %>
+  </div>
+</div>
+
+<div class = "row" style = "border: 1px solid white;">
+  <div class = "col-md-6">
+    <%= image_tag("whiteboard.jpg", alt: "Two hands holding markers designing a website together on a white board.") %>
+  </div>
+  <div class = "col-md-6">
+    <div class = "row">
+      <h2>03.<br>COLLABORATE</h2>
+    </div>
+    <div class = "row">
+      <p>This project would not exist without collaboration</p>
+    </div>
+    <div class = "row">
+      <h2>A community curriculum depends on the community.</h2>
+    </div>
+    <div class = "row">
+      <p>(That means you!)</p>
+    </div>
+    <div class = "row">
+      <%= link_to "REACH OUT TO US!", '#' %>
+    </div>
+
+  </div>
+
+
+</div>

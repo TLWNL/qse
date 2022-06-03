@@ -1,2 +1,5 @@
-<h1>StaticPages#mission</h1>
-<p>Find me in app/views/static_pages/mission.html.erb</p>
+<% provide(:title, "THE MISSION") %>
+
+<h1><%= yield(:title) %></h1>
+<%= render 'layouts/mission' %>
+<%= render 'layouts/patreon' %>
