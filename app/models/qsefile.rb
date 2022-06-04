@@ -1,0 +1,2 @@
+class Qsefile < ApplicationRecord
+end
