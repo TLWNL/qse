@@ -30,6 +30,7 @@ gem 'bootsnap', '>= 1.4.4', require: false
 
 # Bootstrap CSS Framwork
 gem 'bootstrap-sass', '~> 3.4.1'
+gem 'bootstrap-will_paginate', '1.0.0'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -53,6 +54,15 @@ group :test do
   gem 'selenium-webdriver', '>= 4.0.0.rc1'
   # Easy installation and use of web drivers to run system tests with browsers
   gem 'webdrivers'
+  gem 'rails-controller-testing', '>= 1.0.5'
+  gem 'minitest', '>= 5.11.3'
+  gem 'minitest-reporters', '1.3.8'
+  gem 'guard', '>= 2.16.2'
+  gem 'guard-minitest', '>= 2.4.6'
+end
+
+group :production do
+  gem 'pg', '>= 1.2.3'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
