@@ -5,6 +5,10 @@ class ZinesController < ApplicationController
   def index
     @zines = Zine.all
   end
+  
+  def display
+    @zines = Zine.all
+  end
 
   # GET /zines/1 or /zines/1.json
   def show
