@@ -10,5 +10,17 @@
   <%= @zine.description %>
 </p>
 
+<p>
+    <strong>Uploaded File</strong>
+      <% if @zine.image.image? %>
+        <%= image_tag(@zine.image) %>
+      <% else %>
+        <% if @zine.image.previewable? %>
+          <%= image_tag @zine.image.preview(resize_to_limit: [100, 100]) %>
+        <% end %>
+        <%= link_to @zine.image.filename, rails_blob_path(@zine.image, disposition: "attachment") %>
+      <% end %>
+</p>
+
 <%= link_to 'Edit', edit_zine_path(@zine) %> |
 <%= link_to 'Back', zines_path %>
