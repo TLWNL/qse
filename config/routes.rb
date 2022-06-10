@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-  resources :blogs
   root 'zines#display'
   
   get '/zines', to: 'zines#display'  
@@ -9,6 +8,8 @@ Rails.application.routes.draw do
   get '/glossary', to: 'static_pages#glossary'
   get '/resources', to: 'static_pages#resources'
   get '/joinus', to: 'static_pages#joinus'
-  
+  get '/blog', to: 'blogs#show' 
+   
+  resources :blogs
   resources :zines
 end
